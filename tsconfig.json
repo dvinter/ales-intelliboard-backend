@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "noEmit": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/features/*"
+      ],
+      "@entities/*": [
+        "src/features/common/entities/*"
+      ],
+      "@interfaces/*": [
+        "src/features/common/interfaces/*"
+      ],
+      "@intellilogs/*": [
+        "src/features/intellilogs/*"
+      ],
+      "@apis/*": [
+        "src/pages/api/*"
+      ],
+      "@providers/*": [
+        "src/features/common/providers/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

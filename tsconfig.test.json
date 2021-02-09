@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/features/*"
+      ],
+      "@entities/*": [
+        "src/features/common/entities/*"
+      ],
+      "@interfaces/*": [
+        "src/features/common/interfaces/*"
+      ],
+      "@intellilogs/*": [
+        "src/features/intellilogs/*"
+      ],
+      "@apis/*": [
+        "src/pages/api/*"
+      ]
+    }
+  }
+}

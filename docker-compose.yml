@@ -1,0 +1,19 @@
+version: '2'
+services:
+  nodejs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nodejs
+    container_name: nodejs
+    restart: unless-stopped
+    ports:
+      - "3002:3000"
+    volumes:
+      - .:/home/node/app
+      - node_modules:/home/node/app/node_modules
+    command: npm run prod
+    network_mode: "host"
+volumes:
+  dbdata:
+  node_modules:
